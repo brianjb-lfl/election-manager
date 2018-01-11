@@ -138,6 +138,15 @@ h2 {
   margin-top: 10px;
 }
 
+.helper-text {
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+  border: 1px solid grey;
+  background-color: #f3f7c7;
+  border-radius: 3px;
+  padding: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
 li {
   list-style-type: none;
   font-size: 12px;

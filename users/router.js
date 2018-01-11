@@ -102,6 +102,7 @@ router.post('/', jsonParser, (req, res) => {
 
 // Updates a user's "hasVoted" status to "true"
 router.put('/setVote/:username', jsonParser, (req, res) => {    
+  console.log(req.params.username);
   let setHasVoted;
   req.params.username==='demovoter' ? setHasVoted = false : setHasVoted = true;
   User

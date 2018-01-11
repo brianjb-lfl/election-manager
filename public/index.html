@@ -25,7 +25,28 @@
 			<button type="button" id="public-login-btn" class="gen-btn public-btn">Login</button>
 			<button type="button" id="public-signup-btn" class="gen-btn public-btn">Sign Up</button>
 			<button type="button" id="public-logout-btn" class="gen-btn">Logout</button>
-		</div>
+    </div>
+    <div class="helper-text col-12">
+      <h2>Demo Notes</h2>
+      <p>
+        Election Manager administers elections from start to finish.  It gives the administrator tools
+        to set up individual races and allows voters to vote.  And it keeps track of the votes as they are cast.
+      </p>
+      <p>Voter Login:<br/>
+        <span className="indent-text">demovoter</span><br/>
+        <span className="indent-text">demovoterpw</span><br/>
+        <span className="indent-text">note: The "only vote once" control is turned off for the demo voter.</span>
+        <span className="indent-text">Feel free to create a new voter to test this feature.</span>
+      </p>
+      <p>Admin Login:<br/>
+        <span className="indent-text">demoadmin</span><br/>
+        <span className="indent-text">demoadminpw</span><br/>
+      </p>
+      <p>
+        This app will only allow a voter to vote in races for their state, city and district (Miami, FL - 5 for the demo voter).
+        However, once you are done voting and log out, you will see the results for all current races.
+      </p>
+    </div>
 	</div>
 
 	<div id="voting" class="view">
@@ -129,7 +150,7 @@
 				<button type="submit">Login</button>
 			</div>
 			Don't have an account? <a href="" class="viewSignup">Signup</a>
-		</fieldset>
+    </fieldset>
 	</form>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
