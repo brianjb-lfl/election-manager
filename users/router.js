@@ -102,10 +102,12 @@ router.post('/', jsonParser, (req, res) => {
 
 // Updates a user's "hasVoted" status to "true"
 router.put('/setVote/:username', jsonParser, (req, res) => {    
+  let setHasVoted;
+  req.params.username==='demovoter' ? setHasVoted = false : setHasVoted = true;
   User
     .findOneAndUpdate(
       {username: req.params.username},
-      {hasVoted: true}            
+      {hasVoted: setHasVoted}            
     )
     .then(race => res.status(204).end())
     .catch(err => res.status(500).json({message: 'Internal server error'}));
