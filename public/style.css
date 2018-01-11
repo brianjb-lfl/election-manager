@@ -1,0 +1,157 @@
+* {
+  font-family: "Helvetica", Arial, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  max-width: 800px;
+  min-width: 300px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #CCE5F0;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 10px rgba(0,0,0,.4);
+  border-radius: 5px;
+  padding: 10px 0 5px 0;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  font-size: 1em;
+  margin: 5px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  
+}
+
+label {
+  display: block;
+  display:inline-block;
+  width: 80px;
+}
+
+button, input[type=submit] {
+  height: 30px;
+  width: 100px;
+  background-color: #FF9999;
+}
+
+.button-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+  height: 30px;
+  width: 100px;
+  margin: 5px;
+  margin-top: 20px;
+  background-color: #E06F6F;
+  color: white;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  font-weight: 700;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+button:hover {
+  background-color: #E26363;
+  box-shadow: 0 0 10px rgba(0,0,0,.4)
+}
+
+.small-button {
+  height: 20px;
+  width: 60px;
+  margin: 5px;
+  background-color: #B3B3B3;
+  border: 1px solid #9B9B9B;
+}
+
+.small-button:hover {
+  background-color: #8D8D8D;
+  box-shadow: 0 0 5px rgba(0,0,0,.4);
+}
+
+h2 {
+  text-align: center;
+}
+
+#public-results .race-block {
+  display: inline-block;
+  border: 1px solid grey;
+  background-color: #CCE5F0;
+  border-radius: 3px;
+  padding: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+  text-align: center;
+}
+
+#public-results .race-block span {
+  margin-top: 10px;
+}
+
+.view {
+  display: none;
+}
+
+.race-block label {
+  display: block;
+  color: black;
+  font-size: 1em;
+  margin: 5px;
+  padding: 5px 30px 5px 30px;
+  font-weight: 700;
+  background-color: #CCE5F0;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.admin-race-block {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  border-width: 4px;
+  border-color: black;
+  background-color: #C4EBFD;
+}
+
+.race-label {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.radio-label {
+  float: left;
+  width: 100%;
+}
+
+input[type="radio"] {
+  float: left;
+  position: absolute;
+  margin-left: -20px;
+  /* display: none;
+  margin: auto; */
+}

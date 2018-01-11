@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Home</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div id="public" class="view">
+		<h2>Public Results</h2>
+		<div id="public-results">
+			<div class="row"> 
+			<!-- results html here -->
+			</div>	
+		</div>
+		<div class="button-container">
+			<button type="button" id="public-login-btn" class="gen-btn public-btn">Login</button>
+			<button type="button" id="public-signup-btn" class="gen-btn public-btn">Sign Up</button>
+			<button type="button" id="public-logout-btn" class="gen-btn">Logout</button>
+		</div>
+	</div>
+
+	<div id="voting" class="view">
+		<h2>Voting</h2>
+		<div id="ballot-list">
+			<div class="row">
+			<!-- ballot html here -->
+			</div>
+		</div>
+		<div class="button-container">
+			<button type="button" id="submit-votes-btn" class="gen-btn">Submit</button>
+			<button type="button" id="submit-votes-cancel" class="gen-btn public-cancel">Cancel</button>
+		</div>
+	</div>
+
+	<div id="election-admin" class="view">
+		<h2>Election Admin</h2>
+		<div class="button-container">
+			<button type="button" id="go-new-race-btn" class="gen-btn">Add New</button>
+			<button type="button" id="cancel-election-admin-btn" class="gen-btn public-cancel">Cancel</button>
+		</div>
+		<div id="election-admin-list">
+			<div class="row">
+			<!-- election admin list html here -->
+			</div>
+		</div>
+	</div>
+
+	<div id="race-edit" class="view">
+		<h2>Add new race</h2>
+		<form id="add-edit-race-form">
+			<span id="edited-race-id" class="soft-id"></span><br>
+			<label for="race-type">Race type</label>
+			<input type="text" id="race-type" class="race-input"><br>
+			<label for="city">City, St</label>
+			<input type="text" id="city" class="race-input">
+			<input type="text" id="state" class="race-input"><br>
+			<label for="district">District</label>
+			<input type="text" id="district" class="race-input"><br>
+			<label for="candidate-1">Candidates:</label><br>
+			<button type="button" id="add-candidate-btn" class="small-button">Add</button><br>
+			<input type="text" id="candidate-1" class="race-input-candidate"><button type="button" id="del-1" class="delete-candidate-btn small-button">X</button><br>
+			<input type="text" id="candidate-2" class="race-input-candidate"><button type="button" id="del-2" class="delete-candidate-btn small-button">X</button><br>
+			<input type="text" id="candidate-3" class="race-input-candidate"><button type="button" id="del-3" class="delete-candidate-btn small-button">X</button><br>
+			<input type="text" id="candidate-4" class="race-input-candidate"><button type="button" id="del-4" class="delete-candidate-btn small-button">X</button><br>
+			<input type="text" id="candidate-5" class="race-input-candidate"><button type="button" id="del-5" class="delete-candidate-btn small-button">X</button><br>
+			<input type="text" id="candidate-6" class="race-input-candidate"><button type="button" id="del-6" class="delete-candidate-btn small-button">X</button><br>
+			<input type="text" id="candidate-7" class="race-input-candidate"><button type="button" id="del-7" class="delete-candidate-btn small-button">X</button><br>
+			<input type="text" id="candidate-8" class="race-input-candidate"><button type="button" id="del-8" class="delete-candidate-btn small-button">X</button><br>
+			<input type="text" id="candidate-9" class="race-input-candidate"><button type="button" id="del-9" class="delete-candidate-btn small-button">X</button><br>
+			<div class="button-container">
+				<button type="button" id="new-race-post-btn" class="gen-btn">Submit</button>
+				<button type="button" id="new-race-cancel-btn" class="gen-btn">Cancel</button>
+			</div>
+		</form>
+	</div>
+
+	<form id="signup" class="view">
+		<fieldset>
+			<legend>Signup</legend>
+			<div>
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username">
+			</div>
+			<div>
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password">
+			</div>
+			<div>
+				<label for="signup-city">City, St</label>
+				<input type="text" id="signup-city" name="city">
+				<input type="text" id="signup-state" name="state">
+			</div>
+			<div>
+				<label for="signup-district">District</label>
+				<input type="text" id="signup-district" name="district">
+			</div>
+			<div>
+				<label for="signup-admin">Administrator</label>
+				<input type="checkbox" id="signup-admin" name="adminUser" value="false">
+			</div>
+			<div class="button-container">
+				<button type="submit">Signup</button>
+			</div>
+			Already have an account? <a href="" class="viewLogin">Login</a>
+		</fieldset>
+	</form>
+
+	<form id="login" class="view">
+		<fieldset>
+			<legend>Login</legend>
+			<div>
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username">
+			</div>
+			<div>
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password">
+			</div>
+			<div class="button-container">
+				<button type="submit">Login</button>
+			</div>
+			Don't have an account? <a href="" class="viewSignup">Signup</a>
+		</fieldset>
+	</form>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous"></script>
+
+	<script>
+		const BASE_URL = 'http://localhost:8080/v1';
+	</script>
+	<script src="js/api.js"></script>
+	<script src="js/render.js"></script>
+	<script src="js/handle.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
