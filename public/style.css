@@ -139,18 +139,23 @@ h2 {
 }
 
 .helper-text {
+  width: 75%;
+  margin: 20% auto 0 auto;
   box-shadow: 0 0 3px rgba(0,0,0,.3);
   border: 1px solid grey;
   background-color: #f3f7c7;
   border-radius: 3px;
-  margin-top: 20%;
-  padding: 5px;
+  padding: 2px 5px;
   box-shadow: 0 0 3px rgba(0,0,0,.3);
   font-size: 12px;
 }
 
 .helper-text h2 {
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.helper-text span {
+  margin-left: 12px;
 }
 
 li {
